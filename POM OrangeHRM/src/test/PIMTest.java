@@ -29,11 +29,6 @@ public class PIMTest extends BaseTest {
 	}
 	
 	@Test(priority = 6)
-	public void verifyPIM() {
-		Assert.assertEquals(pim.pimPageTitle(), "PIM");
-	}
-	
-	@Test(priority = 7)
 	public void verifyCheckBoxSelected() {
 		pim.selectPimCheckBox();
 		Assert.assertEquals(pim.CheckBoxSelected(), true);
