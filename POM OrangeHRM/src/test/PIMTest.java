@@ -2,6 +2,12 @@ package test;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
 import org.testng.Assert;
 
 
@@ -18,6 +24,16 @@ public class PIMTest extends BaseTest {
 	}
 	
 	@Test(priority = 5)
+	public void verifyPim() {
+		Assert.assertEquals(pim.pimPageTitle(), "PIM");
+	}
+	
+	@Test(priority = 6)
+	public void verifyPIM() {
+		Assert.assertEquals(pim.pimPageTitle(), "PIM");
+	}
+	
+	@Test(priority = 7)
 	public void verifyCheckBoxSelected() {
 		pim.selectPimCheckBox();
 		Assert.assertEquals(pim.CheckBoxSelected(), true);
